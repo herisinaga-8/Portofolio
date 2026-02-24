@@ -54,7 +54,7 @@ body {
 
 .hero {
   position: relative;
-  background: url('../../image/k3/PLTU.jpeg') center/cover no-repeat;
+  background: url('../../image/k3/pltu.jpeg') center/cover no-repeat;
   padding: 90px 8%;
   min-height: 100vh;
   display: flex;
