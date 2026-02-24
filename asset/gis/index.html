@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio GIS | Heri Basa Sinaga</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Heri Basa Sinaga</div>
+      <ul class="nav-menu">
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="#gis">Pengalaman</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="portfolio-hero" id="home">
+    <div class="portfolio-hero-content">
+      <h1>Heri Basa Sinaga</h1>
+      <h2>GIS & Survey Specialist</h2>
+      <p>Berpengalaman dalam pemetaan, survei lapangan, dan pengolahan data <strong>spasial</strong> berbasis proyek,
+        mencakup pemetaan topografi, drone mapping, dan analisis SIG untuk berbagai sektor.</p>
+
+      <a href="#contact" class="btn-contact">
+        <span>💬</span> Hubungi Saya</a>
+      <a href="cv-heri-basa-sinaga.pdf" class="btn-contact" download> Unduh CV</a>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-icon">📍</div>
+          <div class="stat-info">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Tahun<br>Pengalaman</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">📦</div>
+          <div class="stat-info">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Proyek<br>GIS & Survey</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-hero-image">
+      <img src="../../image/gis/profil.jpg" alt="Heri Basa Sinaga - GIS Specialist" />
+    </div>
+  </section>
+
+  <!-- PROYEK UNGGULAN -->
+  <section class="projects-section" id="gis">
+    <h3>Proyek GIS Unggulan</h3>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+      <button class="filter-btn" data-filter="drone">Drone Mapping</button>
+      <button class="filter-btn" data-filter="gis">Operator GIS</button>
+      <button class="filter-btn" data-filter="surveyor">Surveyor</button>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Drone Mapping Projects (1 cards) -->
+      <div class="project-card" data-category="drone" data-modal="drone1">
+        <img src="../../image/gis/card 1.JPG" alt="Amdal" />
+        <div class="project-card-body">
+          <h4>Pemetaan AMDAL <span>2022-2024</span></h4>
+          <div class="project-category">🚁 Drone Mapping | PT. Adare Multi </div>
+          <ul>
+            <li>Akuisisi citra udara UAV untuk penyusunan dokumen AMDAL berbagai kawasan industri & pesisir</li>
+            <li>Data digunakan untuk orthophoto, DEM, dan analisis lingkungan</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="drone" data-modal="drone2">
+        <img src="../../image/gis/card 2.JPG" alt="Abrasi" />
+        <div class="project-card-body">
+          <h4>Analisis Abrasi Pantai<span>2021</span></h4>
+          <div class="project-category">🚁 Drone Mapping | PT Inspirasi Multitama Andalan</div>
+          <ul>
+            <li>Akuisisi foto udara resolusi tinggi wilayah pesisir</li>
+            <li>Kolaborasi penentuan titik kontrol darat (GCP)</li>
+            <li>Pengolahan data Orthophoto dan DEM</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="drone" data-modal="drone3">
+        <img src="../../image/gis/card 3.JPG" alt="Sedimen" />
+        <div class="project-card-body">
+          <h4>Pemetaan Morfosedimen Pantai <span>2024</span></h4>
+          <div class="project-category">🚁 Drone Mapping</div>
+          <ul>
+            <li>Akuisisi foto udara menggunakan Phantom 4 RTK</li>
+            <li>Pengukuran topografi dan profil pantai</li>
+            <li>Pengolahan data Orthophoto dan DEM</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="drone" data-modal="drone4">
+        <img src="../../image/gis/card 4.JPG" alt="Perkebunan" />
+        <div class="project-card-body">
+          <h4>Pemetaan Perkebunan Tebu PTNP VII <span>2024</span></h4>
+          <div class="project-category">🚁 Drone Mapping | Fakultas Pertanian dan Sekolah Vokasi UGM</div>
+          <ul>
+            <li>Akuisisi citra multispektral untuk kesehatan tanaman</li>
+            <li>Pengambilan ICP dan perencanaan jalur terbang</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+
+      <!-- GIS Operator Projects (5 cards) -->
+      <div class="project-card" data-category="gis" data-modal="gis1">
+        <img src="../../image/gis/card 5.JPG" alt="Cipayung" />
+        <div class="project-card-body">
+          <h4>Updating Peta Dasar Cipayung & Margonda <span>2024-2025</span></h4>
+          <div class="project-category">🗺️ Operator GIS | Freelance</div>
+          <ul>
+            <li>Digitasi jalan, bangunan, dan penggunaan lahan</li>
+            <li>Penyusunan Basis Data Spasial</li>
+            <li>Validasi topologi data spasial</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="gis" data-modal="gis2">
+        <img src="../../image/gis/card 6.JPG" alt="Saluran Cilacap" />
+        <div class="project-card-body">
+          <h4>Peta Saluran Pembuangan Cilacap <span>2021</span></h4>
+          <div class="project-category">🗺️ Operator GIS | CV. Hycon Andromeda</div>
+          <ul>
+            <li>Validasi & koreksi data KML jaringan saluran</li>
+            <li>Interpretasi citra untuk penyempurnaan geometri</li>
+            <li>Produksi 200+ layout peta tematik</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="gis" data-modal="gis3">
+        <img src="../../image/gis/card 7.JPG" alt="Emisi Karbon" />
+        <div class="project-card-body">
+          <h4>Digitasi Tutupan Lahan Emisi Karbon<span>2023</span></h4>
+          <div class="project-category">🗺️ Operator GIS</div>
+          <ul>
+            <li>Klasifikasi citra satelit tutupan lahan</li>
+            <li>Digitasi kategori penggunaan lahan</li>
+            <li>Estimasi potensi emisi & penyerapan karbon</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="gis" data-modal="gis4">
+        <img src="../../image/gis/card 8.JPG" alt="Geologi" />
+        <div class="project-card-body">
+          <h4>Digitasi Peta Geologi Sumatera Barat<span>2021</span></h4>
+          <div class="project-category">🗺️ Operator GIS</div>
+          <ul>
+            <li>Georeferensi peta analog</li>
+            <li>Digitasi litologi & struktur geologi</li>
+            <li>Penyusunan peta geologi digital</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="gis" data-modal="gis5">
+        <img src="../../image/gis/card 9.JPG" alt="Erosi" />
+        <div class="project-card-body">
+          <h4>Analisis Erosi Parit DEM Banjarnegara<span>2021</span></h4>
+          <div class="project-category">🗺️ Operator GIS</div>
+          <ul>
+            <li>Pengolahan DEM resolusi tinggi</li>
+            <li>Identifikasi area rawan erosi</li>
+            <li>Pemodelan aliran permukaan</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+
+      <!-- Surveyor Projects (2 cards) -->
+      <div class="project-card" data-category="surveyor" data-modal="surveyor1">
+        <img src="../../image/gis/card 10.JPG" alt="Logistik Bencana" />
+        <div class="project-card-body">
+          <h4>Pemetaan Pemenuhan Logistik Kebencanaan<span>2021</span></h4>
+          <div class="project-category">📐 Surveyor | CV. Buana Wirapersada</div>
+          <ul>
+            <li>Pengumpulan data lapangan multi-instansi</li>
+            <li>Verifikasi dan integrasi data spasial</li>
+            <li>Analisis kebutuhan logistik wilayah</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="surveyor" data-modal="surveyor2">
+        <img src="../../image/gis/card 11.JPG" alt="Keritisan lahan" />
+        <div class="project-card-body">
+          <h4>Analisis Kekritisan Lahan Kec. Loano, Purworejo<span>2021</span></h4>
+          <div class="project-category">📐 Surveyor</div>
+          <ul>
+            <li>Pengukuran GCP & ICP</li>
+            <li>Pengolahan data GPS</li>
+            <li>Pengolahan data orthophoto akurat</li>
+          </ul>
+          <button class="project-link">Selengkapnya →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALS -->
+  <!-- Drone Mapping Modals -->
+  <div id="modal-drone1" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 1.JPG" alt="Pantai Depok" class="modal-image" />
+      <h2></h2>
+      <div class="modal-meta">
+        <span class="modal-category">🚁 Drone Mapping</span>
+        <span class="modal-year">2022-2024</span>
+        <a href="https://drive.google.com/drive/folders/10g-E475uAGP2UmTLWDoiOnh19IeKCbRt?usp=sharing"
+          class="btn-link">Lihat Output</a>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Melakukan akuisisi data udara menggunakan UAV pada berbagai lokasi proyek (industri, kesehatan, dan pesisir)
+          serta memproses citra menjadi orthophoto bergeoreferensi untuk mendukung penyusunan dokumen AMDAL, termasuk
+          analisis spasial, identifikasi penggunaan lahan, dan delineasi area terdampak.</p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>UAV DJI Mavic Series / Phantom Series</li>
+          <li>Flight planning software</li>
+          <li>Agisoft Metashape / Photoscan</li>
+          <li>ArcGIS / QGIS</li>
+        </ul>
+
+        <h3>Peran</h3>
+        <ul>
+          <li>Perencanaan jalur terbang</li>
+          <li>Akuisisi foto udara</li>
+          <li>Pengolahan citra menjadi orthophoto</li>
+          <li>Koordinasi teknis dengan tim lapangan</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Orthophoto bergeoreferensi</li>
+          <li>Peta tata guna lahan</li>
+          <li>Dataset spasial untuk dokumen AMDAL</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-drone2" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 2.JPG" alt="Pantai Depok" class="modal-image" />
+      <h2></h2>
+      <div class="modal-meta">
+        <span class="modal-category">🚁 Drone Mapping</span>
+        <span class="modal-year">2021</span>
+        <a href="https://drive.google.com/drive/folders/1abapwMyhy6A6Lh3t8rj8xTtHlWC08lUc?usp=sharing"
+          class="btn-link">Lihat Output</a>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Sebagai Pilot Drone, saya bertanggung jawab mengoperasikan UAV (DJI Mavic 2 Zoom) untuk akuisisi citra udara
+          resolusi tinggi di kawasan pesisir Kabupaten Bantul. Pekerjaan mencakup perencanaan jalur terbang, pengambilan
+          data foto udara, serta koordinasi dengan tim survei darat dalam penentuan titik Ground Control Point (GCP).
+          Data yang dihasilkan digunakan dalam pembuatan orthomosaic, Digital Elevation Model (DEM), serta analisis
+          perubahan garis pantai. Kontribusi ini mendukung identifikasi risiko abrasi dan menjadi dasar penyusunan
+          strategi mitigasi bencana pesisir..</p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>DJI Mavic 2 Zoom</li>
+          <li>GPS Geodetik Navcom SF-2050</li>
+          <li>Agisoft Metashape</li>
+          <li>ArcGIS</li>
+          <li>Drone Deploy</li>
+        </ul>
+        <h3>Peran</h3>
+        <ul>
+          <li>Flight planning</li>
+          <li>Akuisisi citra udara</li>
+          <li>Koordinasi penentuan GCP</li>
+          <li>Mendukung penyusunan dataset DEM</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Orthomosaic resolusi tinggi</li>
+          <li>DEM pesisir</li>
+          <li>Data analisis perubahan garis pantai</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-drone3" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 3.JPG" alt="Pantai Drini" class="modal-image" />
+      <h2></h2>
+      <div class="modal-meta">
+        <span class="modal-category">🚁 Drone Mapping</span>
+        <span class="modal-year">2024</span>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Melaksanakan pemetaan morfosedimen di wilayah pesisir aktif Kabupaten Gunung Kidul dan Bantul. Kegiatan
+          meliputi akuisisi citra udara menggunakan UAV (DJI Phantom 4 RTK), pengambilan sampel sedimen pantai,
+          pengukuran topografi, serta survei profil melintang pantai untuk mengidentifikasi pola sedimentasi yang
+          mempengaruhi dinamika abrasi. Data yang diperoleh mendukung analisis karakteristik pesisir dan evaluasi proses
+          perubahan garis pantai.</p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>DJI Phantom 4 RTK</li>
+          <li>GPS Geodetik</li>
+          <li>TLS Leica</li>
+          <li>Peralatan sampling</li>
+        </ul>
+
+        <h3>Peran</h3>
+        <ul>
+          <li>Akuisisi foto udara</li>
+          <li>Koordinasi pengukuran profil pantai</li>
+          <li>Pengumpulan data lapangan</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Orthophoto pesisir</li>
+          <li>Model elevasi digital</li>
+          <li>Data analisis morfologi pantai</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-drone4" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 4.JPG" alt="AOI Kebun Bunga Mayang" class="modal-image" />
+      <h2></h2>
+      <div class="modal-body">
+        <span class="modal-category">🚁 Drone Mapping</span>
+        <span class="modal-year">2024</span>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Melaksanakan akuisisi data udara pada pemetaan perkebunan tebu menggunakan drone bersensor multispektral
+          untuk mendukung analisis kesehatan tanaman. Tanggung jawab meliputi perencanaan jalur terbang, pengoperasian
+          drone, serta pengambilan titik Independent Check Point (ICP) guna memastikan ketelitian posisi data. Data yang
+          diperoleh digunakan oleh tim analisis untuk evaluasi kondisi vegetasi dan optimalisasi pengelolaan pemupukan
+          di area perkebunan.</p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>DJI Mavic 3 Multispectral</li>
+          <li>GNSS RTK</li>
+          <li>Flight planning mapping software</li>
+        </ul>
+
+        <h3>Peran</h3>
+        <ul>
+          <li>Perencanaan jalur terbang</li>
+          <li>Pengukuran ICP/GCP</li>
+          <li>Akuisisi citra multispektral</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Dataset citra multispektral</li>
+          <li>Metadata penerbangan</li>
+          <li>Titik kontrol geospasial presisi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- GIS Operator Modals -->
+  <div id="modal-gis1" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 5.JPG" alt="Cipayung" class="modal-image" />
+      <h2></h2>
+      <div class="modal-body">
+        <span class="modal-category">Operator GIS</span>
+        <span class="modal-year">2024-2025</span>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Pembaruan peta dasar wilayah Cipayung dan Margonda meliputi digitasi jaringan jalan, bangunan, dan penggunaan
+          lahan. Proyek ini mengintegrasikan data lapangan dengan teknologi remote sensing untuk menghasilkan peta dasar
+          digital yang akurat dan terkini.</p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>ArcGIS</li>
+          <li>Global Mapper</li>
+          <li>Citra Satelit Resolusi Tinggi</li>
+          <li>Digitasi On-screen</li>
+          <li>Topology Validation</li>
+        </ul>
+
+        <h3>Peran</h3>
+        <ul>
+          <li>Melakukan interpretasi citra</li>
+          <li>Digitasi fitur spasial</li>
+          <li>Validasi topologi data</li>
+          <li>Quality control basis data spasial</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Peta dasar digital terkini</li>
+          <li>Layer spasial bertopologi bersih</li>
+          <li>Database spasial siap analisis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-gis2" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 6.JPG" alt="Saluan" class="modal-image" />
+      <h2></h2>
+      <div class="modal-body">
+        <span class="modal-category">Operator GIS</span>
+        <span class="modal-year">2021</span>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Melakukan penyempurnaan data jaringan saluran pembuangan di wilayah Cilacap berdasarkan file KML hasil survei
+          lapangan melalui interpretasi citra satelit untuk penyesuaian geometri terhadap kondisi aktual. Pekerjaan
+          mencakup klasifikasi penggunaan lahan di sekitar jaringan saluran, pengolahan data spasial, serta penyusunan
+          peta tematik dalam format layout cetak. Hasil akhir berupa lebih dari 200 lembar peta siap pakai yang
+          mendukung kebutuhan perencanaan teknis dan dokumentasi instansi terkait.</p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>ArcGIS</li>
+          <li>Import KML</li>
+          <li>Interpretasi Citra</li>
+          <li>Kartografi Layout</li>
+        </ul>
+
+        <h3>Peran</h3>
+        <ul>
+          <li>Verifikasi data survey</li>
+          <li>Koreksi jalur saluran</li>
+          <li>Klasifikasi penggunaan lahan</li>
+          <li>Penyusunan layout peta</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Dataset jaringan saluran terbarui</li>
+          <li>±200 peta tematik cetak</li>
+          <li>Data spasial siap perencanaan teknis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-gis3" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 7.JPG" alt="Karbon" class="modal-image" />
+      <h2></h2>
+      <div class="modal-body">
+        <span class="modal-category">Operator GIS</span>
+        <span class="modal-year">2023</span>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Melakukan analisis tutupan lahan berbasis citra satelit untuk mendukung perhitungan emisi karbon melalui
+          proses klasifikasi dan digitasi berbagai jenis tutupan lahan. Pekerjaan mencakup interpretasi citra,
+          pengolahan data spasial, serta estimasi potensi penyerapan dan emisi karbon pada tiap kategori tutupan lahan.
+          Hasil analisis digunakan sebagai dasar penyusunan informasi spasial untuk evaluasi lingkungan dan pengambilan
+          keputusan berbasis data.</p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>ArcGIS / QGIS</li>
+          <li>Citra Multispektral</li>
+          <li>Digitasi Manual</li>
+          <li>Analisis Tutupan Lahan</li>
+        </ul>
+
+        <h3>Peran</h3>
+        <ul>
+          <li>Klasifikasi tutupan lahan</li>
+          <li>Digitasi fitur spasial</li>
+          <li>Validasi hasil klasifikasi</li>
+          <li>Pengolahan layer analisis</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Peta tutupan lahan multikelas</li>
+          <li>Dataset spasial analisis karbon</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-gis4" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 8.JPG" alt="Geologi" class="modal-image" />
+      <h2></h2>
+      <div class="modal-body">
+        <span class="modal-category">Operator GIS</span>
+        <span class="modal-year">2021</span>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Melakukan konversi peta geologi analog ke format digital melalui proses georeferensi dan digitasi detail
+          litologi serta struktur geologi seperti sesar dan lipatan. Pekerjaan mencakup pembangunan basis data spasial
+          geologi yang terstruktur dan akurat, sehingga dapat digunakan untuk mendukung analisis geologi serta
+          perencanaan pembangunan berbasis risiko kebencanaan dan kondisi geologi wilayah.</p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>ArcGIS</li>
+          <li>Georeferencing Tools</li>
+          <li>Digitasi Polygon & Line</li>
+          <li>Database Spasial</li>
+        </ul>
+
+        <h3>Peran</h3>
+        <ul>
+          <li>Georeferensi peta analog</li>
+          <li>Digitasi formasi batuan</li>
+          <li>Digitasi struktur geologi</li>
+          <li>Pengisian atribut spasial</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Database geologi digital</li>
+          <li>Layer litologi dan struktur geologi</li>
+          <li>Data spasial siap analisis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-gis5" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 9.JPG" alt="Kekritisan Lahan" class="modal-image" />
+      <h2></h2>
+      <div class="modal-body">
+        <span class="modal-category">Operator GIS</span>
+        <span class="modal-year">2021</span>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Melakukan pengolahan data Digital Elevation Model (DEM) untuk analisis erosi parit di wilayah Banjarnegara.
+          Pekerjaan mencakup analisis spasial guna mengidentifikasi area rawan erosi, pemodelan pola aliran permukaan,
+          serta interpretasi potensi sedimentasi sebagai dasar pendukung perencanaan mitigasi dan pengelolaan lahan.
+        </p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>ArcGIS Spatial Analysis</li>
+          <li>DEM Processing</li>
+          <li>Slope & Aspect Analysis</li>
+          <li>3D Visualization</li>
+        </ul>
+
+        <h3>Peran</h3>
+        <ul>
+          <li>Preprocessing data elevasi</li>
+          <li>Analisis kemiringan lereng</li>
+          <li>Visualisasi model terrain</li>
+          <li>Interpretasi hasil analisis</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Model terrain 3D</li>
+          <li>Peta area rawan erosi</li>
+          <li>Dataset analisis topografi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Surveyor Modals -->
+  <div id="modal-surveyor1" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 10.jpg" alt="Logistik" class="modal-image" />
+      <h2></h2>
+      <div class="modal-body">
+        <span class="modal-category">Surveyor</span>
+        <span class="modal-year">2021</span>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Pengumpulan dan pemetaan data logistik kebencanaan untuk mendukung peningkatan kesiapsiagaan wilayah di
+          Daerah Istimewa Yogyakarta. Proyek melibatkan survei lapangan lintas kabupaten untuk mengidentifikasi
+          distribusi kelompok rentan serta kebutuhan logistik berbasis data kependudukan.</p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>ArcGIS Desktop</li>
+          <li>Survei Lapangan</li>
+          <li>Pengolahan Data Kependudukan</li>
+          <li>Koordinasi Antar Instansi</li>
+        </ul>
+
+        <h3>Peran</h3>
+        <ul>
+          <li>Melakukan pengumpulan data primer melalui survei lapangan</li>
+          <li>Memverifikasi data sekunder dari instansi terkait</li>
+          <li>Berkoordinasi dengan BPBD, Dinsos, Dinkes, dan Dukcapil</li>
+          <li>Mendukung pemetaan distribusi kelompok rentan</li>
+          <li>Membantu analisis kebutuhan logistik wilayah</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Dataset distribusi logistik kebencanaan</li>
+          <li>Peta spasial kelompok rentan</li>
+          <li>Data pendukung perencanaan distribusi logistik</li>
+          <li>Informasi spasial untuk pengambilan keputusan kesiapsiagaan bencana</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-surveyor2" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img src="../../image/gis/modal 11.jpg" alt="Geodetik" class="modal-image" />
+      <h2></h2>
+      <div class="modal-body">
+        <span class="modal-category">Surveyor</span>
+        <span class="modal-year">2021</span>
+      </div>
+      <div class="modal-body" style="text-align: justify;">
+        <h3>Deskripsi Proyek</h3>
+        <p>Survei geodetik dan pemetaan udara untuk mendukung analisis kekritisan lahan sebagai bagian dari studi
+          mitigasi longsor. Pengumpulan data kontrol tanah dilakukan untuk meningkatkan akurasi orthophoto dan analisis
+          topografi.</p>
+
+        <h3>Teknologi & Tools</h3>
+        <ul>
+          <li>GPS Geodetik Navcom SF-2050</li>
+          <li>RTK-NTRIP Method</li>
+          <li>Agisoft Metashape</li>
+          <li>ArcGIS Desktop</li>
+        </ul>
+
+        <h3>Peran</h3>
+        <ul>
+          <li>Melakukan pemasangan dan pengukuran titik GCP</li>
+          <li>Mengukur titik ICP untuk validasi akurasi </li>
+          <li>Mengolah data GPS geodetic</li>
+          <li>Mendukung proses pembuatan orthophoto</li>
+        </ul>
+
+        <h3>Hasil & Deliverables</h3>
+        <ul>
+          <li>Data koordinat GCP/ICP presisi tinggi</li>
+          <li>Orthophoto resolusi tinggi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEAHLIAN SECTION -->
+  <section class="skills-section" id="experience">
+    <h3>Keahlian GIS & Mapping</h3>
+
+    <div class="skill-card">
+      <div class="skill-info">
+        <h4>
+          <span class="skill-icon">🚁</span>
+          Basic Drone Pilot
+        </h4>
+        <p>Memiliki sertifikasi resmi untuk pengoperasian drone berbasis PIX4D & DJI</p>
+        <div class="skill-badges">
+          <div class="skill-badge active"></div>
+          <div class="skill-badge"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="portfolio-footer" id="contact">
+    <div class="footer-text">© 2024 Heri Basa Sinaga. All rights reserved.</div>
+    <div class="footer-social">
+      <a href="https://wa.me/628119727888" target="_blank" title="WhatsApp">
+        <img src="../../image/gis/logo 1.png" alt="WhatsApp" class="social-icon">
+      </a>
+      <a href="https://www.linkedin.com/in/username" target="_blank" title="LinkedIn">
+        <img src="../../image/gis/logo 2.png" alt="LinkedIn" class="social-icon">
+      </a>
+      <a href="https://github.com/username" target="_blank" title="GitHub">
+        <img src="../../image/gis/logo 3.png" alt="GitHub" class="social-icon">
+      </a>
+      <a href="mailto:herisinaga0@gmail.com" target="_blank" title="Email">
+        <img src="../../image/gis/logo 4.png" alt="Email" class="social-icon">
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heri Basa Sinaga | GIS & Safety Officer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Heri Basa Sinaga</div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#experience">Pengalaman</a></li>
+        <li><a href="#gis">Portofolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div id="home" class="hero">
+    <div>
+      <h1>Heri Basa Sinaga</h1>
+      <h2>Professional GIS & Safety Officer Lapangan (Freelance)</h2>
+      <p>Memiliki pengalaman dalam mapping dan analisis SIG serta pengawasan K3 berbasis proyek di lingkungan industri
+        dan operasional PLTU.</p>
+
+      <div class="hero-actions">
+        <a href="#gis" class="btn primary">Lihat Portofolio GIS</a>
+        <a href="#k3" class="btn secondary">Lihat Portofolio K3</a>
+      </div>
+
+      <div class="tools">
+        <span class="tool">ArcGIS</span>
+        <span class="tool">QGIS</span>
+        <span class="tool">Pix4D</span>
+        <span class="tool">DroneDeploy</span>
+        <span class="tool">HSE</span>
+      </div>
+    </div>
+
+    <img src="./image/home/profil.JPG" alt="Heri Basa Sinaga" />
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about" style="text-align: justify;">
+      <h3>Tentang Saya</h3>
+      <p>Saya merupakan praktisi di bidang Sistem Informasi Geografis (SIG), pemetaan drone, dan survei lapangan dengan
+        pengalaman lebih dari empat tahun dalam pengumpulan serta pengolahan data spasial. Berpengalaman mengoperasikan
+        instrumen survei dan perangkat lunak GIS untuk menghasilkan data yang akurat dan dapat diandalkan, serta
+        didukung pemahaman Keselamatan dan Kesehatan Kerja (K3) untuk menunjang pelaksanaan pekerjaan lapangan secara
+        aman dan terstruktur.
+      </p>
+
+      <div class="about-grid">
+        <div class="box blue">
+          <h4><span class="spec-icon gis">🗺️</span>Spesialisasi GIS</h4>
+          <ul class="skill-grid">
+            <li class="skill">🗺️ GIS & Mapping</li>
+            <li class="skill">📊 Analisis Data Geospasial</li>
+            <li class="skill">🚁 Drone Mapping</li>
+            <li class="skill">📐 Topografi</li>
+          </ul>
+        </div>
+        <div class="box yellow">
+          <h4><span class="spec-icon k3">🦺</span>Keahlian Safety Officer</h4>
+          <ul class="skill-grid">
+            <li class="skill">🦺 Pengawasan K3 Lapangan</li>
+            <li class="skill">🗣️ Toolbox Meeting</li>
+            <li class="skill">⚠️ Identifikasi Bahaya</li>
+            <li class="skill">📄 Pengelolaan Izin Kerja</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="experience">
+      <h3>Pengalaman Kerja</h3>
+
+      <div class="exp-filter">
+        <button class="exp-btn active" onclick="filterExp('gis')">GIS & Mapping</button>
+        <button class="exp-btn" onclick="filterExp('k3')">Safety Officer</button>
+      </div>
+
+      <!-- GIS EXPERIENCE -->
+      <div class="exp-grid exp-gis" id="gisGrid">
+        <!-- CARD 1: GIS ANALYST -->
+        <div class="exp-card">
+          <h4>🚁 Pilot Drone</h4>
+          <strong>PT Adare Multi Service (Berbasis Proyek)</strong>
+          <div class="exp-meta">Des 2022–Ags 2024 | Yogyakarta, Indonesia</div>
+          <ul>
+            <li>Melakukan perencanaan jalur terbang untuk pemetaan udara pada beberapa proyek AMDAL industri.</li>
+            <li>Mengoperasikan drone untuk akuisisi foto udara resolusi tinggi.</li>
+            <li>Mengolah data menjadi orthophoto dan DEM untuk kebutuhan pemetaan lingkungan.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: TOPOGRAFI (KANAN) -->
+        <div class="exp-card">
+          <h4>🗺️Konsultan GIS</h4>
+          <strong>Proyek Mandiri (Freelance)</strong>
+          <div class="exp-meta">Mar 2024–Jan 2026 | Remote</div>
+          <ul>
+            <li>Memperbarui peta dasar menggunakan ArcGIS dan Global Mapper.</li>
+            <li>Melakukan interpretasi dan digitasi citra wilayah Cipayung dan Margonda.</li>
+            <li>Menghasilkan data spasial bertopologi bersih untuk basis data perencanaan wilayah.</li>
+            <li>Melakukan validasi dan quality control data spasial.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="exp-card">
+          <h4>🗺️ Tim Leader Surveyor</h4>
+          <strong>CV Buana Wirapersada</strong>
+          <div class="exp-meta">Ags 2021–Des 2021 | Daerah Istimewa Yogyakarta, Indonesia</div>
+          <ul>
+            <li>Memimpin tim survei pengumpulan data logistik kebencanaan.</li>
+            <li>Merencanakan kegiatan pengambilan data lapangan.</li>
+            <li>Mengolah data spasial untuk pemetaan kesiapsiagaan bencana.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="exp-card">
+          <h4>🚁 Surveyor & Pilot Drone</h4>
+          <strong>PT Inspirasi Multitama Andalan</strong>
+          <div class="exp-meta">Okt 2022–Des 2022 | Daerah Istimewa Yogyakarta, Indonesia</div>
+          <ul>
+            <li>Mengkoordinasi tim pengukuran garis pantai di wilayah Bantul.</li>
+            <li>Melaksanakan pemetaan udara menggunakan UAV dan survei topografi.</li>
+            <li>Mengolah data spasial untuk pemetaan bahaya abrasi.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="exp-card">
+          <h4>📊 GIS Operator</h4>
+          <strong>CV Hycon Andrameda</strong>
+          <div class="exp-meta">Jun 2021–Des 2021 | Daerah Istimewa Yogyakarta, Indonesia</div>
+          <ul>
+            <li>Memperbarui data spasial aset jaringan irigasi melalui aplikasi PUPR.</li>
+            <li>Menyusun ratusan peta jaringan saluran irigasi di Kabupaten Cilacap.</li>
+            <li>Melakukan pengecekan topologi untuk memastikan akurasi data.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="exp-card">
+          <h4>🚁 Pilot Drone</h4>
+          <strong>Fakultas Pertanian UGM & PTPN VII</strong>
+          <div class="exp-meta">Jun 2024 | Lampung, Indonesia</div>
+          <ul>
+            <li>Melaksanakan pemetaan udara menggunakan DJI Mavic 3 Multispektral.</li>
+            <li>Mengakuisisi data untuk analisis kesehatan tanaman perkebunan.</li>
+            <li>Mengoptimalkan workflow survei lapangan selama kegiatan pemetaan.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:24px;" class="gis-toggle">
+        <button id="toggleGis" class="exp-btn" onclick="toggleGis()">Lihat selengkapnya</button>
+      </div>
+
+      <!-- K3 EXPERIENCE -->
+      <div class="exp-grid exp-k3" style="display:none">
+
+        <!-- K3 CARD 1 -->
+        <div class="exp-card">
+          <h4>🦺 Safety Officer Lapangan</h4>
+          <strong>CV Mutiara Buana</strong>
+          <h5>Pemasangan Lampu Ship Unloader | Area PLTU Labuhan Angin</h5>
+          <div class="exp-meta">September 2025 | Tapanuli Tengah, Indonesia</div>
+          <ul>
+            <li> Pengawasan aktivitas pekerjaan pemasangan lampu di area operasional PLTU..</li>
+            <li>Mengingatkan pekerja terhadap penggunaan APD sesuai prosedur.</li>
+            <li>Pelaksanaan toolbox meeting sebelum pekerjaan dimulai.</li>
+          </ul>
+        </div>
+
+        <!-- K3 CARD 2 -->
+        <div class="exp-card">
+          <h4>🦺 Safety Officer Lapangan</h4>
+          <strong>PT Putera Instrumenindo</strong>
+          <h5>Pekerjaan Preventif Panel CEMS | Area PLTU Labuhan Angin</h5>
+          <div class="exp-meta">Oktober 2025 | Tapanuli Tengah, Indonesia</div>
+          <ul>
+            <li>Pengawasan pekerjaan penggantian dan perawatan panel CEMS.</li>
+            <li>Pengurusan akses masuk area kerja dan material.</li>
+            <li>Monitoring penerapan prosedur keselamatan kerja.</li>
+          </ul>
+        </div>
+
+        <!-- K3 CARD 3 -->
+        <div class="exp-card">
+          <h4>🦺 Safety Officer Lapangan</h4>
+          <strong>PT Solusi Kontrol Informatika</strong>
+          <h5>Penggantian Panel MMF WTP | Area PLTU Labuhan Angin</h5>
+          <div class="exp-meta">Januari 2026 | Tapanuli Tengah, Indonesia</div>
+          <ul>
+            <li>Pengawasan pekerjaan panel listrik di area Water Treatment Plant (WTP).</li>
+            <li>Mengingatkan pekerja terkait potensi bahaya dan penggunaan APD.</li>
+            <li>Koordinasi dengan pengawas dan user area.</li>
+            <li>Dokumentasi dan pelaporan aktivitas keselamatan kerja.</li>
+            <li>Pembuatan Report pekerjaan.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PENGALAMAN TAMBAHAN -->
+  <section id="additional-exp">
+    <div class="experience">
+      <h3>Pengalaman Tambahan</h3>
+      <div class="exp-filter">
+        <button class="exp-btn" onclick="openModal('modalDosen')">🎓 Asisten Dosen</button>
+        <button class="exp-btn" onclick="openModal('modalPenelitian')">🔬 Asisten Penelitian</button>
+        <button class="exp-btn" onclick="openModal('modalPengabdian')">🤝 Asisten Pengabdian</button>
+        <button class="exp-btn" onclick="openModal('modalPelatihan')">🤝 Pengajar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL 1: ASISTEN DOSEN -->
+  <div id="modalDosen" class="modal" style="display:none">
+    <div class="modal-content modal-split">
+      <span class="close" onclick="closeModal('modalDosen')">&times;</span>
+
+      <div class="modal-header">
+        <h4>🎓 Asisten Dosen</h4>
+        <div class="modal-meta">Universitas Gadjah Mada | 2019 – 2023</div>
+      </div>
+
+      <div class="modal-body-split">
+        <!-- LEFT IMAGE - Gambar langsung di HTML -->
+        <div class="modal-left">
+          <img src="./image/home/praktikum.jpg" alt="Asisten Dosen" />
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="modal-right">
+          <ul>
+            <li>Mendampingi praktikum GIS, Aerial Survey, GNSS dan pengolahan data spasial</li>
+            <li>Membantu mahasiswa memahami dan peggunaan alat-alat survey</li>
+            <li>Membantu mahasiswa memahami analisis peta & SIG</li>
+            <li>Menyiapkan modul dan bahan praktikum</li>
+            <li>Mendukung evaluasi dan penilaian praktikum</li>
+            <li>Koordinasi dengan dosen pengampu</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: ASISTEN PENELITIAN -->
+  <div id="modalPenelitian" class="modal" style="display:none">
+    <div class="modal-content modal-split">
+      <span class="close" onclick="closeModal('modalPenelitian')">&times;</span>
+
+      <div class="modal-header">
+        <h4>🔬 Asisten Penelitian GIS</h4>
+        <div class="modal-meta">Universitas Gadjah Mada</div>
+      </div>
+
+      <div class="modal-body-split">
+        <!-- LEFT IMAGE - Gambar langsung di HTML -->
+        <div class="modal-left">
+          <img src="./image/home/penelitian.jpeg" alt="Asisten Penelitian" />
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="modal-right">
+          <ul>
+            <li>Pengolahan dan analisis data spasial penelitian</li>
+            <li>Digitasi dan penyusunan peta tematik</li>
+            <li>Quality control data GIS</li>
+            <li>Akuisisi data lapangan</li>
+            <li>Koordinasi dengan tim peneliti</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: ASISTEN PENGABDIAN -->
+  <div id="modalPengabdian" class="modal" style="display:none">
+    <div class="modal-content modal-split">
+      <span class="close" onclick="closeModal('modalPengabdian')">&times;</span>
+
+      <div class="modal-header">
+        <h4>🤝 Asisten Pengabdian Masyarakat</h4>
+        <div class="modal-meta">Program Pengabdian | 2024</div>
+      </div>
+
+      <div class="modal-body-split">
+        <!-- LEFT IMAGE - Gambar langsung di HTML -->
+        <div class="modal-left">
+          <img src="./image/home/pelatihan.JPG" alt="Asisten Pengabdian Masyarakat" />
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="modal-right">
+          <ul>
+            <li>Penyampaian materi dasar Sistem Informasi Geografis kepada perangkat desa</li>
+            <li>Pelatihan penggunaan QGIS untuk pengolahan data spasial</li>
+            <li>Pengelolaan atribut data serta visualisasi peta tematik</li>
+          </ul>
+          <a href="https://sig.sv.ugm.ac.id/ugm-dan-kalurahan-ngargosari-bersinergi-tingkatkan-tata-kelola-wilayah-berkelanjutan-melalui-pelatihan-sistem-informasi-geografis/" class="btn primary">Lihat Artikel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL 5: PENGAJAR PELATIHAN -->
+  <div id="modalPelatihan" class="modal" style="display:none">
+    <div class="modal-content modal-split">
+      <span class="close" onclick="closeModal('modalPelatihan')">&times;</span>
+
+      <div class="modal-header">
+        <h4>Pengajar Pelatihan</h4>
+        <div class="modal-meta">Pusat Studi Transportasi Universitas Gadjah Mada</div>
+      </div>
+
+      <div class="modal-body-split">
+        <!-- LEFT IMAGE - Gambar langsung di HTML -->
+        <div class="modal-left">
+          <img src="./image/home/sertifikat pengajar.png" alt="Pengajar Pelatihan" />
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="modal-right">
+          <ul>
+            <li>...</li>
+            <li>...</li>
+            <li>...</li>
+            <li>...</li>
+            <li>...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <section id="gis">
+    <h3>Portofolio</h3>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <img src="./image/home/gis.png" alt="GIS Project" />
+        <div class="portfolio-body" style="text-align: justify;">
+          <h4>Portofolio GIS & Pemetaan Berbasis Drone dan Survei</h4>
+          <p>Portofolio ini menampilkan proyek GIS, drone mapping, dan survei lapangan dari pengambilan data hingga
+            analisis spasial.</p>
+          <a href="./asset/gis/index.html" class="btn primary">Lihat Selengkapnya</a>
+        </div>
+      </div>
+
+      <div class="portfolio-card" id="k3">
+        <img src="./image/home/k3.png" alt="K3 Project" />
+        <div class="portfolio-body" style="text-align: justify;">
+          <h4>Portofolio K3 Umum</h4>
+          <p>Portofolio ini menampilkan pengalaman K3 lapangan dalam penerapan keselamatan dan kesehatan kerja pada
+            kegiatan operasional proyek.</p>
+          <a href="./asset/k3/index.html" class="btn secondary">Lihat Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    © 2026 Heri Basa Sinaga
+  </footer>
+
+  <!-- INLINE SCRIPT UNTUK MODAL PENGALAMAN TAMBAHAN -->
+  <script>
+    // ===== FUNGSI BUKA MODAL =====
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = 'flex';
+    }
+
+    // ===== FUNGSI TUTUP MODAL =====
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = 'none';
+    }
+
+    // ===== TUTUP MODAL SAAT KLIK DI LUAR KONTEN =====
+    window.onclick = function (event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    }
+
+    // ===== TUTUP MODAL DENGAN TOMBOL ESC =====
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+          modal.style.display = 'none';
+        });
+      }
+    });
+  </script>
+
+  <!-- EXTERNAL SCRIPT -->
+  <script src="script.js"></script>
+</body>
+
+</html>
