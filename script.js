@@ -1,3 +1,30 @@
+// ===== HAMBURGER MENU =====
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+
+// Create overlay element for mobile nav
+const overlay = document.createElement('div');
+overlay.className = 'nav-overlay';
+document.body.appendChild(overlay);
+
+hamburger.addEventListener('click', function () {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('open');
+  overlay.classList.toggle('show');
+  document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+});
+
+overlay.addEventListener('click', function () {
+  closeNav();
+});
+
+function closeNav() {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('open');
+  overlay.classList.remove('show');
+  document.body.style.overflow = '';
+}
+
 // ===== EXPERIENCE FILTER =====
 function filterExp(type) {
   const gis = document.querySelector('.exp-gis');
@@ -40,3 +67,21 @@ function toggleGis() {
 
 // Initialize on page load
 initGis();
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const targetId = this.getAttribute('href');
+    if (targetId === '#') return;
+    const target = document.querySelector(targetId);
+    if (target) {
+      e.preventDefault();
+      const navHeight = document.querySelector('.navbar').offsetHeight;
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 16;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});

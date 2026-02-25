@@ -14,18 +14,23 @@
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">Heri Basa Sinaga</div>
-      <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#experience">Pengalaman</a></li>
-        <li><a href="#gis">Portofolio</a></li>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" onclick="closeNav()">Home</a></li>
+        <li><a href="#about" onclick="closeNav()">Tentang</a></li>
+        <li><a href="#experience" onclick="closeNav()">Pengalaman</a></li>
+        <li><a href="#gis" onclick="closeNav()">Portofolio</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- HERO -->
   <div id="home" class="hero">
-    <div>
+    <div class="hero-text">
       <h1>Heri Basa Sinaga</h1>
       <h2>Professional GIS & Safety Officer Lapangan (Freelance)</h2>
       <p>Memiliki pengalaman dalam mapping dan analisis SIG serta pengawasan K3 berbasis proyek di lingkungan industri
@@ -45,7 +50,9 @@
       </div>
     </div>
 
-    <img src="./image/home/profil.JPG" alt="Heri Basa Sinaga" />
+    <div class="hero-image">
+      <img src="./image/home/profil.JPG" alt="Heri Basa Sinaga" />
+    </div>
   </div>
 
   <!-- ABOUT -->
@@ -94,7 +101,6 @@
 
       <!-- GIS EXPERIENCE -->
       <div class="exp-grid exp-gis" id="gisGrid">
-        <!-- CARD 1: GIS ANALYST -->
         <div class="exp-card">
           <h4>🚁 Pilot Drone</h4>
           <strong>PT Adare Multi Service (Berbasis Proyek)</strong>
@@ -106,9 +112,8 @@
           </ul>
         </div>
 
-        <!-- CARD 2: TOPOGRAFI (KANAN) -->
         <div class="exp-card">
-          <h4>🗺️Konsultan GIS</h4>
+          <h4>🗺️ Konsultan GIS</h4>
           <strong>Proyek Mandiri (Freelance)</strong>
           <div class="exp-meta">Mar 2024–Jan 2026 | Remote</div>
           <ul>
@@ -119,7 +124,6 @@
           </ul>
         </div>
 
-        <!-- CARD 3 -->
         <div class="exp-card">
           <h4>🗺️ Tim Leader Surveyor</h4>
           <strong>CV Buana Wirapersada</strong>
@@ -131,7 +135,6 @@
           </ul>
         </div>
 
-        <!-- CARD 4 -->
         <div class="exp-card">
           <h4>🚁 Surveyor & Pilot Drone</h4>
           <strong>PT Inspirasi Multitama Andalan</strong>
@@ -143,7 +146,6 @@
           </ul>
         </div>
 
-        <!-- CARD 5 -->
         <div class="exp-card">
           <h4>📊 GIS Operator</h4>
           <strong>CV Hycon Andrameda</strong>
@@ -155,7 +157,6 @@
           </ul>
         </div>
 
-        <!-- CARD 6 -->
         <div class="exp-card">
           <h4>🚁 Pilot Drone</h4>
           <strong>Fakultas Pertanian UGM & PTPN VII</strong>
@@ -174,21 +175,18 @@
 
       <!-- K3 EXPERIENCE -->
       <div class="exp-grid exp-k3" style="display:none">
-
-        <!-- K3 CARD 1 -->
         <div class="exp-card">
           <h4>🦺 Safety Officer Lapangan</h4>
           <strong>CV Mutiara Buana</strong>
           <h5>Pemasangan Lampu Ship Unloader | Area PLTU Labuhan Angin</h5>
           <div class="exp-meta">September 2025 | Tapanuli Tengah, Indonesia</div>
           <ul>
-            <li> Pengawasan aktivitas pekerjaan pemasangan lampu di area operasional PLTU..</li>
+            <li>Pengawasan aktivitas pekerjaan pemasangan lampu di area operasional PLTU.</li>
             <li>Mengingatkan pekerja terhadap penggunaan APD sesuai prosedur.</li>
             <li>Pelaksanaan toolbox meeting sebelum pekerjaan dimulai.</li>
           </ul>
         </div>
 
-        <!-- K3 CARD 2 -->
         <div class="exp-card">
           <h4>🦺 Safety Officer Lapangan</h4>
           <strong>PT Putera Instrumenindo</strong>
@@ -201,7 +199,6 @@
           </ul>
         </div>
 
-        <!-- K3 CARD 3 -->
         <div class="exp-card">
           <h4>🦺 Safety Officer Lapangan</h4>
           <strong>PT Solusi Kontrol Informatika</strong>
@@ -215,7 +212,6 @@
             <li>Pembuatan Report pekerjaan.</li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
@@ -237,19 +233,14 @@
   <div id="modalDosen" class="modal" style="display:none">
     <div class="modal-content modal-split">
       <span class="close" onclick="closeModal('modalDosen')">&times;</span>
-
       <div class="modal-header">
         <h4>🎓 Asisten Dosen</h4>
         <div class="modal-meta">Universitas Gadjah Mada | 2019 – 2023</div>
       </div>
-
       <div class="modal-body-split">
-        <!-- LEFT IMAGE - Gambar langsung di HTML -->
         <div class="modal-left">
           <img src="./image/home/praktikum.jpg" alt="Asisten Dosen" />
         </div>
-
-        <!-- RIGHT CONTENT -->
         <div class="modal-right">
           <ul>
             <li>Mendampingi praktikum GIS, Aerial Survey, GNSS dan pengolahan data spasial</li>
@@ -268,19 +259,14 @@
   <div id="modalPenelitian" class="modal" style="display:none">
     <div class="modal-content modal-split">
       <span class="close" onclick="closeModal('modalPenelitian')">&times;</span>
-
       <div class="modal-header">
         <h4>🔬 Asisten Penelitian GIS</h4>
         <div class="modal-meta">Universitas Gadjah Mada</div>
       </div>
-
       <div class="modal-body-split">
-        <!-- LEFT IMAGE - Gambar langsung di HTML -->
         <div class="modal-left">
           <img src="./image/home/penelitian.jpeg" alt="Asisten Penelitian" />
         </div>
-
-        <!-- RIGHT CONTENT -->
         <div class="modal-right">
           <ul>
             <li>Pengolahan dan analisis data spasial penelitian</li>
@@ -298,48 +284,38 @@
   <div id="modalPengabdian" class="modal" style="display:none">
     <div class="modal-content modal-split">
       <span class="close" onclick="closeModal('modalPengabdian')">&times;</span>
-
       <div class="modal-header">
         <h4>🤝 Asisten Pengabdian Masyarakat</h4>
         <div class="modal-meta">Program Pengabdian | 2024</div>
       </div>
-
       <div class="modal-body-split">
-        <!-- LEFT IMAGE - Gambar langsung di HTML -->
         <div class="modal-left">
           <img src="./image/home/pelatihan.JPG" alt="Asisten Pengabdian Masyarakat" />
         </div>
-
-        <!-- RIGHT CONTENT -->
         <div class="modal-right">
           <ul>
             <li>Penyampaian materi dasar Sistem Informasi Geografis kepada perangkat desa</li>
             <li>Pelatihan penggunaan QGIS untuk pengolahan data spasial</li>
             <li>Pengelolaan atribut data serta visualisasi peta tematik</li>
           </ul>
-          <a href="https://sig.sv.ugm.ac.id/ugm-dan-kalurahan-ngargosari-bersinergi-tingkatkan-tata-kelola-wilayah-berkelanjutan-melalui-pelatihan-sistem-informasi-geografis/" class="btn primary">Lihat Artikel</a>
+          <a href="https://sig.sv.ugm.ac.id/ugm-dan-kalurahan-ngargosari-bersinergi-tingkatkan-tata-kelola-wilayah-berkelanjutan-melalui-pelatihan-sistem-informasi-geografis/" class="btn primary" target="_blank">Lihat Artikel</a>
         </div>
       </div>
     </div>
   </div>
 
-<!-- MODAL 5: PENGAJAR PELATIHAN -->
+  <!-- MODAL 5: PENGAJAR PELATIHAN -->
   <div id="modalPelatihan" class="modal" style="display:none">
     <div class="modal-content modal-split">
       <span class="close" onclick="closeModal('modalPelatihan')">&times;</span>
-
       <div class="modal-header">
         <h4>Pengajar Pelatihan</h4>
         <div class="modal-meta">Pusat Studi Transportasi Universitas Gadjah Mada</div>
       </div>
-
       <div class="modal-body-split">
-        <!-- LEFT IMAGE - Gambar langsung di HTML -->
         <div class="modal-left">
           <img src="./image/home/sertifikat pengajar.png" alt="Pengajar Pelatihan" />
         </div>
-
-        <!-- RIGHT CONTENT -->
         <div class="modal-right">
           <ul>
             <li>...</li>
@@ -385,38 +361,37 @@
 
   <!-- INLINE SCRIPT UNTUK MODAL PENGALAMAN TAMBAHAN -->
   <script>
-    // ===== FUNGSI BUKA MODAL =====
     function openModal(modalId) {
       document.getElementById(modalId).style.display = 'flex';
+      document.body.style.overflow = 'hidden';
     }
 
-    // ===== FUNGSI TUTUP MODAL =====
     function closeModal(modalId) {
       document.getElementById(modalId).style.display = 'none';
+      document.body.style.overflow = '';
     }
 
-    // ===== TUTUP MODAL SAAT KLIK DI LUAR KONTEN =====
     window.onclick = function (event) {
       const modals = document.querySelectorAll('.modal');
       modals.forEach(modal => {
         if (event.target === modal) {
           modal.style.display = 'none';
+          document.body.style.overflow = '';
         }
       });
     }
 
-    // ===== TUTUP MODAL DENGAN TOMBOL ESC =====
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
         const modals = document.querySelectorAll('.modal');
         modals.forEach(modal => {
           modal.style.display = 'none';
         });
+        document.body.style.overflow = '';
       }
     });
   </script>
 
-  <!-- EXTERNAL SCRIPT -->
   <script src="script.js"></script>
 </body>
 
